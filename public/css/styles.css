@@ -1,0 +1,28 @@
+.heading{
+    padding: 12em;
+}
+
+#shiz{
+    /* color: blue; */
+    padding: 1.5em;
+}
+
+#betweenhr{
+    padding: .5em;
+}
+
+.form{
+    padding: 1.5em;
+}
+
+.label{
+    padding: .6em;
+}
+
+#qrcode{
+    padding-left: 12rem;
+    padding-right:12rem;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+
+}

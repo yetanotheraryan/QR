@@ -2,10 +2,14 @@ const express = require("express")
 const app = express()
 const bp = require("body-parser")
 const qr = require("qrcode")
+const path = require("path")
 
+// settng up the app 
 app.set("view engine", "ejs");
 app.use(bp.urlencoded({extended: false}))
 app.use(bp.json());
+app.use(express.static(__dirname + '/public'));
+
 
 
 app.get("/", (req, res)=>{
