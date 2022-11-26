@@ -40,14 +40,14 @@ app.post("/scan", (req, res)=>{
     });
 })
 
-app.post('/login', (req, res) =>{
-    //authenticate user
-    const username = req.body.username
-    const user = {name: username}    
-    const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET)
-    // whenever the user logs in his info is gonna be stored in the access token
-    res.json({accessToken: accessToken})
-})
+// app.post('/login', (req, res) =>{
+//     //authenticate user
+//     const username = req.body.username
+//     const user = {name: username}    
+//     const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET)
+//     // whenever the user logs in his info is gonna be stored in the access token
+//     res.json({accessToken: accessToken})
+// })
 
 
 function authenticateToken(req, res, next){
